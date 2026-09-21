@@ -10,24 +10,46 @@ z2
 cModel Technology
 Z0 dD:/Study Materials/FPGA/Codes/Projects/VGA/build
 vvga_sync
-!s110 1789974755
+Z1 !s110 1790028696
 !i10b 1
 !s100 2Ql;8b4l8>LSf<bPiPQAn1
-!s11b Dg1SIo80bB@j0V0VzS_@n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IL16630^n:gdiFcF:zIL]G0
-VDg1SIo80bB@j0V0VzS_@n1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1789973964
 8../rtl/vga_sync.v
 F../rtl/vga_sync.v
-!i122 1
+!i122 6
 L0 1 42
-OV;L;2020.1;71
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1789974755.000000
+Z5 !s108 1790028696.000000
 !s107 ../rtl/vga_sync.v|
 !s90 -reportprogress|300|../rtl/vga_sync.v|
 !i113 1
-tCvgOpt 0
+Z6 tCvgOpt 0
+vvga_sync_tb
+R1
+!i10b 1
+!s100 LW2T_YFZQYb:JG>RUo6:73
+R2
+INjY4IBbdW]infLTai<B5E0
+R3
+R0
+w1789980770
+8../tb/vga_sync_tb.v
+F../tb/vga_sync_tb.v
+!i122 7
+L0 3 30
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../tb/vga_sync_tb.v|
+!s90 -reportprogress|300|../tb/vga_sync_tb.v|
+!i113 1
+R6
