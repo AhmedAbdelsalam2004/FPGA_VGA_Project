@@ -1,0 +1,33 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Study Materials/FPGA/Codes/Projects/VGA/build
+vvga_sync
+!s110 1789974755
+!i10b 1
+!s100 2Ql;8b4l8>LSf<bPiPQAn1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IL16630^n:gdiFcF:zIL]G0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1789973964
+8../rtl/vga_sync.v
+F../rtl/vga_sync.v
+!i122 1
+L0 1 42
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1789974755.000000
+!s107 ../rtl/vga_sync.v|
+!s90 -reportprogress|300|../rtl/vga_sync.v|
+!i113 1
+tCvgOpt 0
