@@ -9,41 +9,63 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/Study Materials/FPGA/Codes/Projects/VGA/build
-vvga_sync
-Z1 !s110 1790028696
+vpixel_generation
+Z1 !s110 1790044525
 !i10b 1
-!s100 2Ql;8b4l8>LSf<bPiPQAn1
+!s100 Ae5IEUml>H5S^f1BjnE7i1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IL16630^n:gdiFcF:zIL]G0
+IL4cAhR;Q:KnI1>=^B2YI80
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1789973964
-8../rtl/vga_sync.v
-F../rtl/vga_sync.v
-!i122 6
-L0 1 42
+w1790043627
+8../rtl/pixel_generation.v
+F../rtl/pixel_generation.v
+!i122 12
+L0 1 66
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1790028696.000000
+Z5 !s108 1790044525.000000
+!s107 ../rtl/pixel_generation.v|
+!s90 -reportprogress|300|../rtl/pixel_generation.v|
+!i113 1
+Z6 tCvgOpt 0
+vvga_sync
+R1
+!i10b 1
+!s100 2Ql;8b4l8>LSf<bPiPQAn1
+R2
+IL16630^n:gdiFcF:zIL]G0
+R3
+R0
+w1789973964
+8../rtl/vga_sync.v
+F../rtl/vga_sync.v
+!i122 11
+L0 1 42
+R4
+r1
+!s85 0
+31
+R5
 !s107 ../rtl/vga_sync.v|
 !s90 -reportprogress|300|../rtl/vga_sync.v|
 !i113 1
-Z6 tCvgOpt 0
+R6
 vvga_sync_tb
 R1
 !i10b 1
-!s100 LW2T_YFZQYb:JG>RUo6:73
+!s100 gVfhzX5=<:o7e;<@1FH_m2
 R2
-INjY4IBbdW]infLTai<B5E0
+IJUH_MRcz4LEC:WEgMfoFD3
 R3
 R0
-w1789980770
+w1790044480
 8../tb/vga_sync_tb.v
 F../tb/vga_sync_tb.v
-!i122 7
-L0 3 30
+!i122 14
+L0 3 39
 R4
 r1
 !s85 0
@@ -51,5 +73,27 @@ r1
 R5
 !s107 ../tb/vga_sync_tb.v|
 !s90 -reportprogress|300|../tb/vga_sync_tb.v|
+!i113 1
+R6
+vvga_top
+R1
+!i10b 1
+!s100 PmM;?9eFk:lm>^=QLDLjm2
+R2
+IHIB0WR[@:YM9MYBFVmUmd0
+R3
+R0
+w1790044150
+8../rtl/vga_top.v
+F../rtl/vga_top.v
+!i122 13
+L0 1 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 ../rtl/vga_top.v|
+!s90 -reportprogress|300|../rtl/vga_top.v|
 !i113 1
 R6
