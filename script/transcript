@@ -5,44 +5,46 @@
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:35:25 on Sep 22,2026
+# Start time: 06:11:11 on Sep 22,2026
 # vlog -reportprogress 300 ../rtl/vga_sync.v 
 # -- Compiling module vga_sync
 # 
 # Top level modules:
 # 	vga_sync
-# End time: 05:35:25 on Sep 22,2026, Elapsed time: 0:00:00
+# End time: 06:11:11 on Sep 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:35:25 on Sep 22,2026
+# Start time: 06:11:12 on Sep 22,2026
 # vlog -reportprogress 300 ../rtl/pixel_generation.v 
 # -- Compiling module pixel_generation
 # 
 # Top level modules:
 # 	pixel_generation
-# End time: 05:35:25 on Sep 22,2026, Elapsed time: 0:00:00
+# End time: 06:11:12 on Sep 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:35:25 on Sep 22,2026
+# Start time: 06:11:12 on Sep 22,2026
 # vlog -reportprogress 300 ../rtl/vga_top.v 
 # -- Compiling module vga_top
 # 
 # Top level modules:
 # 	vga_top
-# End time: 05:35:25 on Sep 22,2026, Elapsed time: 0:00:00
+# End time: 06:11:12 on Sep 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 05:35:25 on Sep 22,2026
+# Start time: 06:11:12 on Sep 22,2026
 # vlog -reportprogress 300 ../tb/vga_sync_tb.v 
 # -- Compiling module vga_sync_tb
 # 
 # Top level modules:
 # 	vga_sync_tb
-# End time: 05:35:25 on Sep 22,2026, Elapsed time: 0:00:00
+# End time: 06:11:12 on Sep 22,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" work.vga_sync_tb 
-# Start time: 05:35:25 on Sep 22,2026
+# Start time: 06:11:12 on Sep 22,2026
 # Loading work.vga_sync_tb
 # Loading work.vga_top
 # Loading work.vga_sync
 # Loading work.pixel_generation
+# 0 ps
+# 17850 us

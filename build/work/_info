@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/Study Materials/FPGA/Codes/Projects/VGA/build
 vpixel_generation
-Z1 !s110 1790044525
+Z1 !s110 1790046672
 !i10b 1
 !s100 Ae5IEUml>H5S^f1BjnE7i1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,19 +20,19 @@ R0
 w1790043627
 8../rtl/pixel_generation.v
 F../rtl/pixel_generation.v
-!i122 12
+!i122 24
 L0 1 66
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1790044525.000000
+Z5 !s108 1790046672.000000
 !s107 ../rtl/pixel_generation.v|
 !s90 -reportprogress|300|../rtl/pixel_generation.v|
 !i113 1
 Z6 tCvgOpt 0
 vvga_sync
-R1
+!s110 1790046671
 !i10b 1
 !s100 2Ql;8b4l8>LSf<bPiPQAn1
 R2
@@ -42,13 +42,13 @@ R0
 w1789973964
 8../rtl/vga_sync.v
 F../rtl/vga_sync.v
-!i122 11
+!i122 23
 L0 1 42
 R4
 r1
 !s85 0
 31
-R5
+!s108 1790046671.000000
 !s107 ../rtl/vga_sync.v|
 !s90 -reportprogress|300|../rtl/vga_sync.v|
 !i113 1
@@ -56,16 +56,16 @@ R6
 vvga_sync_tb
 R1
 !i10b 1
-!s100 gVfhzX5=<:o7e;<@1FH_m2
+!s100 FBDdUGa4MY[gf@z>;YV5G1
 R2
-IJUH_MRcz4LEC:WEgMfoFD3
+IjM=PP`cI:iGlO?U_S@2Jg0
 R3
 R0
-w1790044480
+w1790046566
 8../tb/vga_sync_tb.v
 F../tb/vga_sync_tb.v
-!i122 14
-L0 3 39
+!i122 26
+L0 3 55
 R4
 r1
 !s85 0
@@ -86,7 +86,7 @@ R0
 w1790044150
 8../rtl/vga_top.v
 F../rtl/vga_top.v
-!i122 13
+!i122 25
 L0 1 32
 R4
 r1

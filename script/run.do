@@ -11,6 +11,9 @@ vlog ../rtl/pixel_generation.v
 vlog ../rtl/vga_top.v
 vlog ../tb/vga_sync_tb.v
 
+# Quit any currently running simulation to prevent wave window corruption
+quit -sim
+
 # 4. Load the simulation without optimization that might hide signals
 vsim -voptargs=+acc work.vga_sync_tb
 

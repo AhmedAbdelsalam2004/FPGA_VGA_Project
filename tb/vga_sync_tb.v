@@ -38,4 +38,20 @@ module vga_sync_tb;
       .rgb(rgb)
   );
 
+  integer file;
+  
+  initial begin
+    file = $fopen("frame.ppm", "w");
+    // Write the PPM header: format P3, 640x480 resolution, 255 max color value
+    $fwrite(file, "P3\n640 480\n255\n");
+  end
+
+  always @(posedge clk) begin
+    // Probe the internal video_on signal using your specific instance name 'vga'
+    if (vga.video_on) begin
+        // rgb is available locally in the testbench
+        $fwrite(file, "%d %d %d\n", rgb[2]*255, rgb[1]*255, rgb[0]*255);
+    end
+  end
+
 endmodule
