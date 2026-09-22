@@ -36,42 +36,38 @@ int main(int argc, char** argv) {
     SDL_Event e;
 
     while (!quit) {
-        // 1. Handle Keyboard Inputs
-        while (SDL_PollEvent(&e) != 0) {
-            if (e.type == SDL_QUIT) quit = true;
-        }
-        
-        const Uint8* currentKeyStates = SDL_GetKeyboardState(NULL);
-        top->btn_up = currentKeyStates[SDL_SCANCODE_UP];
-        top->btn_down = currentKeyStates[SDL_SCANCODE_DOWN];
-
-        // 2. Tick the Hardware Clock
+        // 1. Tick the Hardware Clock
         top->clk = !top->clk;
         top->eval();
 
-        // 3. Capture Pixels on the Positive Edge
+        // 2. Capture Pixels on the Positive Edge
         if (top->clk) {
-            // Only draw if we are in the visible screen area
             if (top->video_on) {
-                // Map the 3-bit RGB from Verilog to a 32-bit ARGB color for the PC monitor
-                uint32_t color = 0xFF000000; // Alpha channel max
-                if (top->rgb & 0b100) color |= 0x00FF0000; // Red
-                if (top->rgb & 0b010) color |= 0x0000FF00; // Green
-                if (top->rgb & 0b001) color |= 0x000000FF; // Blue
+                uint32_t color = 0xFF000000; 
+                if (top->rgb & 0b100) color |= 0x00FF0000; 
+                if (top->rgb & 0b010) color |= 0x0000FF00; 
+                if (top->rgb & 0b001) color |= 0x000000FF; 
 
-                // Safety check to prevent buffer overflow
                 if (top->pixel_x < WIDTH && top->pixel_y < HEIGHT) {
                     pixels[top->pixel_y * WIDTH + top->pixel_x] = color;
                 }
             }
 
-            // 4. Update the screen exactly when the frame finishes (VSYNC falling edge)
-            // When pixel_x is 0 and pixel_y is 480, the visible frame is done
+            // 3. Exactly once per frame (60 Hz)
             if (top->pixel_x == 0 && top->pixel_y == 480) {
+                // Render the screen
                 SDL_UpdateTexture(texture, NULL, pixels, WIDTH * sizeof(uint32_t));
                 SDL_RenderClear(renderer);
                 SDL_RenderCopy(renderer, texture, NULL, NULL);
                 SDL_RenderPresent(renderer);
+
+                // POLL EVENTS HERE: Only 60 times a second!
+                while (SDL_PollEvent(&e) != 0) {
+                    if (e.type == SDL_QUIT) quit = true;
+                }
+                const Uint8* currentKeyStates = SDL_GetKeyboardState(NULL);
+                top->btn_up = currentKeyStates[SDL_SCANCODE_UP];
+                top->btn_down = currentKeyStates[SDL_SCANCODE_DOWN];
             }
         }
     }

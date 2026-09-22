@@ -5,12 +5,11 @@ module vga_top (
     input wire btn_down,
     output wire hsync,
     output wire vsync,
-    output wire [2:0] rgb
+    output wire [2:0] rgb,
+    output wire video_on,
+    output wire [9:0] pixel_x,
+    output wire [9:0] pixel_y
 );
-
-output wire video_on;
-output wire [9:0] pixel_x;
-output wire [9:0] pixel_y;
 
 vga_sync vga(
       .clk(clk), 
